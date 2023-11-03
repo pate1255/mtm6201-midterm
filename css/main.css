@@ -1,0 +1,21 @@
+:root {
+    --custom-color-1: #F29BDB;
+    --custom-color-2: #F199F2;
+    --custom-color-3: #F2B441;
+    --custom-color-4: #F2A649;
+    --custom-color-5: #260101;
+    --font-family-1: 'Fredoka';
+    --font-family-2: 'Quicksand', sans-serif;
+    --font-family-3: 'Nunito', sans-serif;
+}
+
+.announcement-bar{
+    background-color: var(--custom-color-4);
+    text-align: center;
+    font-family:var(--font-family-1);
+    font-weight: bold;
+}
+
+.nav{
+    background-color:var(--custom-color-5);
+}
