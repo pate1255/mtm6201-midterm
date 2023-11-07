@@ -164,17 +164,26 @@ button{
 }
 
 .customer-card{
-    display: flex;
-    width: 25rem; /* Set the width of the box */
-    height: 200px; /* Set the height of the box */
-    background-color: var(--custom-color-3); /* Set the background color */
+    width: 24rem; 
+    height: 15rem; 
+    background-color: var(--custom-color-3); 
     border-radius: 25px;
-    border: 4px solid var(--custom-color-5); /* Add a border */
-    padding: 20px; /* Add padding inside the box */
-    margin: 20px; /* Add margin around the box */
-    text-align:left; /* Center the text inside the box */
-    color: #fff; /* Set the text color */
-    font-size: .8rem; /* Set the font size */
-    font-weight: bold; 
+    border: 4px solid var(--custom-color-5);
+    text-align:left; 
+    color: var(--custom-color-5); 
+    font-size: .8rem; 
+    font-weight: bold;
+    display: flex;
+}
+
+.customer-image img{
+    width: 9rem;
+    margin: 1rem;
+}
+
+.customer-content{
+    margin-top: 2rem;
+    font-family: var(--font-family-3);
+    
 }
 
