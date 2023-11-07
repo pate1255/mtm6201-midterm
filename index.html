@@ -7,39 +7,76 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">  
 </head>
 <body>
-    <nav>
-        <div class="announcement-bar">GET 15% DISCOUNT OF YOUR FIRST PURSHACE!!</div>
+    <div class="announcement-bar">GET 15% DISCOUNT ON YOUR FIRST PURSHACE!!</div>
+    <nav class="navbar">
         <div class="logo">
             <img src="images/logo.png" alt="Logo">
         </div>
-        <ul class="navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Work</a></li>
+        <ul class="navbar-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">SHOP</a></li>
         </ul>
+        <div class="icons">
+            <img src="images/search.png" alt="search">
+            <img src="images/sign-up.png" alt="sign-up">
+            <img src="images/bag.png" alt="shopping-bag">
+            <img src="images/menu.png" alt="menu">
+        </div>
         
     </nav>
-    <header>
+    <header class="header-container">
+        <div class="header-heading">
+            <div><h1>WELCOME TO THE WORLD</h1></div>
+            <div><h1>STUFFED WITH</h1></div>
+            <div><h1>HAPPINESS!</h1></div>
+        </div>
         <div class="header-banner">
             <img src="images/header-banner.png" alt="banner-image">
         </div>
+        
     </header>
     <main>
         <div class="shop">
-            <h1>CHECKOUT OUR NEWLY BLOOMED!</h1>
-            <img src="images/happy-egg.png" alt="happy-egg">
-            <img src="images/mr.dino.png" alt="mr.dino">
-            <img src="images/cozy seal.png" alt="cozy seal">
-            <button>SHOP</button>
+            <div class="shop-heading"><h1>CHECKOUT OUR NEWLY BLOOMED!</h1></div>
+            <div class="shop-cards">
+                <div class="card1"></div>
+                <div class="card2"></div>
+                <div class="card3"></div>
+            </div>
+            <div class="shop-content">
+                <table>
+                    <tr>
+                        <div class="card-image"> 
+                            <td><img src="images/happy-egg.png" alt="happy-egg"></td>
+                            <td><img src="images/mr.dino.png" alt="mr.dino"></td>
+                            <td><img src="images/cozy seal.png" alt="cozy seal"></td>
+                        </div>
+                    </tr>
+                    <tr class="card-name">
+                        <td>HAPPY EGG</td>
+                        <td>MR. DINO</td>
+                        <td>COZY SEAL</td>
+                    </tr>
+                    <tr class="card-price">
+                        <td>$25 CAD</td>
+                        <td>$30 CAD</td>
+                        <td>$40 CAD</td>
+                    </tr>
+                  </table>
+            </div>
+            <div class="button-container"><button class="shop-button">SHOP</button></div>
         </div>
         <div class="customer">
-            <h1>THEY ARE TALKING ABOUT MS.STUFFY</h1>
-            <img src="images/customer.png" alt="customer">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, perferendis. Ab, provident explicabo. Iure at quas, veritatis, culpa pariatur, voluptatem omnis cupiditate officiis eos magnam ex ipsa impedit accusamus quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam rem quibusdam? Ab tenetur quod tempore incidunt totam necessitatibus, excepturi et reprehenderit impedit dignissimos cum iusto voluptate id. Sint, exercitationem.</p>
+            <h1>THEY ARE TALKING ABOUT MS.STUFFY!</h1>
+            <div class="customer-card">
+                <img src="images/customer.png" alt="customer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, perferendis. Ab, provident explicabo. Iure at quas, veritatis, culpa pariatur, voluptatem omnis cupiditate officiis eos magnam ex ipsa impedit accusamus quis.</p>
+            </div>
             <div class="star-rating">
                 <div class="star"></div>
                 <div class="star"></div>
