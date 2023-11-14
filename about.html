@@ -18,26 +18,31 @@
             <li><a href="#footer-section">Move to footer section</a></li>
         </ul>
     </div>
-    <div class="announcement-bar">GET 15% DISCOUNT ON YOUR FIRST PURSHACE!!</div>
-    <nav id="navbar" itemscope itemtype="https://schema.org/SiteNavigationElement">
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo">
-        </div>
-        <div class="nav-links">
-            <ul id="navbar-links" role="menubar">
-                <li role="menuitem"><a href="index.html">HOME</a></li>
-                <li role="menuitem"><a href="about.html">ABOUT</a></li>
-                <li role="menuitem"><a href="contact.html">CONTACT</a></li>
-                <li role="menuitem"><a href="#">SHOP</a></li>
-            </ul>
-        </div>
-        <div class="icons">
-            <img src="images/search.png" alt="search">
-            <img src="images/sign-up.png" alt="sign-up">
-            <img src="images/bag.png" alt="shopping-bag">
-            <img src="images/menu.png" alt="menu">
-        </div>
-    </nav>
+   <!-- adding skip links for accessiblity -->
+   <div class="announcement-bar">GET 15% DISCOUNT ON YOUR FIRST PURSHACE!!</div>
+   <!-- announcement bar on the top for the new updates -->
+  <nav id="navbar" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <div class="logo">
+          <img src="images/logo.png" alt="Logo">
+      </div>
+       <!-- adding logo -->
+      <div class="nav-links">
+          <ul id="navbar-links" role="menubar">
+              <li role="menuitem"><a href="index.html">HOME</a></li>
+              <li role="menuitem"><a href="about.html">ABOUT</a></li>
+              <li role="menuitem"><a href="contact.html">CONTACT</a></li>
+              <li role="menuitem"><a href="#">SHOP</a></li>
+          </ul>
+      </div>
+       <!-- adding navigation bar -->
+      <div class="icons">
+          <img src="images/search.png" alt="search">
+          <img src="images/sign-up.png" alt="sign-up">
+          <img src="images/bag.png" alt="shopping-bag">
+          <img src="images/menu.png" alt="menu">
+      </div>
+       <!-- adding navigation icons -->
+  </nav>
     <main>
         <picture>
             <source srcset= "images/about-us-derivatives/about-us-320_x_123.png 1x"
@@ -47,12 +52,15 @@
             <source srcset="images/about-us-derivatives/about-us-480_x_184.png 1x" media="(max-width:480px)">
             <img src="images/about-us.png" alt="banner" role="img" aria-label="About Us Banner">
         </picture>
+        <!-- making thr image resposive for mobile version upto 480px -->
         <div id="our-story" role="region">
+            <!-- displaying the description about thier company -->
             <h1>OUR STORY</h1>
             <img src="images/about-us.png" alt="about-us">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium, voluptas ratione veniam natus nemo quis. Quidem qui vero minima aut iste totam in, nam asperiores nostrum, velit consequatur placeat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quidem perferendis atque nulla repudiandae saepe veritatis ad eveniet, cum esse harum quis ea ratione quae, autem voluptatibus. Accusamus, nihil? Illum?</p>
         </div>
         <div id="blog" role="region">
+            <!-- displaying about thier daily blog updates and video channel -->
             <h1>OUR BLOG</h1>
             <img src="images/our-blog.png" alt="our-blog">
         </div>
@@ -64,17 +72,19 @@
             <source srcset="images/our-blog-derivatives/our-blog-480_x_219.png 1x" media="(max-width:480px)">
             <img src="images/our-blog-derivatives/our-blog-425_x_194.png" alt="blog" aria-label="blog images">
         </picture>
+        <!-- making the image responsive for the mobile version upto 480px -->
         <div class="blog-2"><h2>STAY UPDATED ON OUR EVENTS</h2></div>
     </main>
-    <footer>
+    <footer id="footer-section">
         <div class="footer-container">
-            <div class="list-1">
-                <ul>
-                    <li>Help & FAQS</li>
-                    <li>Shipments</li>
-                    <li>Return Policy</li>
-                </ul>
+                <div class="list-1">
+                    <ul>
+                        <li>Help & FAQS</li>
+                        <li>Shipments</li>
+                        <li>Return Policy</li>
+                    </ul>
                 </div>
+                 <!-- adding policies of the company -->
                 <div class="list-2">
                     <ul>
                         <li>Privacy Policy</li>
@@ -82,27 +92,37 @@
                         <li>Cookie Policy</li>
                     </ul>
                 </div>
+                 <!-- adding policies and other credentials of the website and company -->
                 <div class="social-media">
-                <img src="images/facebook.png" alt="facebook">
-                <img src="images/twitter.png" alt="twitter">
-                <img src="images/linked-in.png" alt="linked-in">
-            </div>
-            <div class="footer-icons">
-                <img src="images/call.png" alt="call">
-                <img src="images/location.png" alt="location">
-                <img src="images/email.png" alt="email">
-            </div>
+                    <img src="images/facebook.png" alt="facebook">
+                    <img src="images/twitter.png" alt="twitter">
+                    <img src="images/linked-in.png" alt="linked-in">
+                </div>
+                <!-- displaying other social profiles which are available for the users -->
+                <div class="footer-content" >
+                    <ul itemscope itemtype="https://schema.org/Organization">
+                        <li itemprop="telephone">+1(123)-456-7890</li>
+                        <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">234 Down Streets, Nepean ON, K2B 8G9</li>
+                        <li itemprop="email">msstuffy@gmail.com</li>
+                    </ul>
+                </div>
+                 <!-- displaying the icons -->
             <div class="footer-content">
-                <ul  itemscope itemtype="https://schema.org/Organization">
-                    <li itemprop="telephone">+1(123)-456-7890</li>
-                    <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">234 Down Streets, Nepean ON, K2B 8G9</li>
-                    <li itemprop="email">msstuffy@gmail.com</li>
+                <ul>
+                    <li>+1(123)-456-7890</li>
+                    <li>234 Down Streets, Nepean ON, K2B 8G9</li>
+                    <li>msstuffy@gmail.com</li>
                 </ul>
             </div>
+             <!-- adding important info for contacting the company. -->
         </div>
         <div class="border-line"></div>
         <div class="copyright">
-            <p>&copy; 2023 Ms. Stuffy.</p>
+            <p>&copy; 2023 Ms. Stuffy.</p> 
+        </div>
+          <!-- adding copyright -->
+        <div class="back-to-top" role="presentation">
+            <a href="#navbar"><img src="images/back-to-top.png" alt="back-to-top"></a>
         </div>
     </footer>
 </body>

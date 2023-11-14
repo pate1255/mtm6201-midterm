@@ -9,15 +9,18 @@
     --font-family-2: 'Quicksand', sans-serif;
     --font-family-3: 'Solway', serif;
 }
+/* adding custom color from the brand color pallete */
 
 .skip-links{
     margin: auto;
     padding: 0px;
 }
+/* styling skip links for the accessibility */
 
 .skip-links li{
     list-style: none;
 }
+/* removing the list style from skip links */
 .skip-links a{
     position: absolute;
     top: -100px;
@@ -29,10 +32,13 @@
     padding: 15px;
     font-weight: bold;
 }
+/* styling skip links content to match the website concept */
 
 .skip-links a:focus{
     top: 0;
-  }
+}
+
+/* making the skip links accessible when using keyboard */
 
 .announcement-bar{
     background-color: var(--custom-color-4);
@@ -43,21 +49,26 @@
     width: 100%;
     margin: 0 auto;
 }
+/* styling the announcement bar on the top of the website */
 
 nav{
     width: 100%;
     margin: 0 auto;
 }
 
+/* making the nav responsive */
+
 header{
     width: 100%;
     margin: 0 auto;
 }
+/* making the header responsive */
 
 .logo img{
     width: 10rem;
     height:9rem;
 }
+/* sizing the logo on navbar */
 
 #navbar{
     background-color:var(--custom-color-5);
@@ -65,18 +76,20 @@ header{
     justify-content:flex-start;
     margin: 0 auto;
 }
+/* styling and placing the elements on the navigation */
 
 #navbar-links{
     display: flex;
     padding-left: 0px;
     margin-top: .5rem;
 }
+/* displaying the links in a horizontal line */
 
 #navbar-links li{
     list-style-type: none;
     padding: .5rem;
 }
-
+/* styling the links of navbar */
 #navbar-links a{
     text-decoration: none;
     font-family: var(--font-family-3);
@@ -84,36 +97,43 @@ header{
     font-size: 25px;
     font-weight: 450;
 }
+/* styling the links of the navbar */
 
 .icons img{
     padding-right:.5rem;
     padding-left: .5rem;
 }
+/* sizing the img icons*/
 
 .icons img:last-child{
     width: 1.8rem;
     height: 1.7rem;
 }
+/* sizing the search image */
 
 .icons{
     padding: .8rem;
     margin-left: 26.4rem;
 }
+/* spacing the icons */
 
 .header-banner img{
     width: 100%;
     margin: 0 auto;
     margin-top: 1.5rem;
 }
+/* making header adjustive and responsive */
 
 .header-container{
     width: 100%;
     margin: 0 auto;
 }
+/* making the container responsive */
 
 picture{
     display: none;
 }
+/* enabling the display of picture due to displaying it twice */
 .header-heading{
     display:flex;
     flex-flow:column;
@@ -125,17 +145,20 @@ picture{
     color: var(--custom-color-5);
     margin-top: 7rem;
 }
+/* styling the heading */
 
 .header-heading h1{
     margin-top:-1rem;
     width: 100%;
     margin: 0 auto;
 }
+/* spacing and making the heading area responsive */
 
 main{
     width: 100%;
     margin: 0 auto;
 }
+/* making main section responsive */
 
 #shop{
     background-color: var(--custom-color-2);
@@ -146,27 +169,18 @@ main{
     justify-content:center;
     align-items:center;
 }
+/* displaying grid for placing the elements in the section as required */
 
 .shop-heading h1{
     font-family: var(--font-family-3);
     text-align: center;
 }
-
-.shop-cards{
-    display: flex;
-    justify-content: space-between;
-}
+/* styling the heading of the shop */
 
 .shop-content img{
     width: 12rem;
 }
-
-.card2{
-    padding-left: 12rem;
-    padding-right: 12rem;
-}
-
-
+/* sizing the image */
 
 table{
     display:grid;
@@ -174,11 +188,13 @@ table{
     justify-content:center;
     align-items:center;
 }
+/* locating the elements as required */
 
 td{
     padding-left: 7rem;
     padding-right: 7rem;
 }
+/* spacing the data evenly */
 
 .card-name td{
     font-family: var(--font-family-3);
@@ -187,12 +203,14 @@ td{
     font-size: 1.2rem;
     color: var(--custom-color-5);
 }
+/* styling the elements */
 .card-price td{
     font-family: var(--font-family-3);
     color: var(--custom-color-5);
     text-align: center;
     font-size: 1.2rem;
 }
+/* styling the elements */
 button{
     background-color:var(--custom-color-4);
     font-family: var(--font-family-3);
@@ -206,18 +224,20 @@ button{
     border-radius: 20px;
     border: none;
 }
+/* styling and sizing the button */
 
 .button-container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/* adjusting the location of the button */
 
 #customer{
     width: 100%;
     margin: 0 auto;
 }
-
+/* making the space responsive */
 #customer h1{
     margin-top: 2rem;
     text-align: center;
@@ -226,33 +246,37 @@ button{
     font-weight: 500;
     font-size: 1.8rem;
 }
+/* styling and adjusting the heading */
 
 .customer-image img{
     width: 22rem;
     height: 14rem;
     margin: 1rem;
 }
+/* sizing the image */
 
 .customer-comment{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+/* for locating the elements as required */
 
 .left-arrow{
     align-self: center;
     margin-left: 22rem;
 }
+/* adjusting it in the section */
 
 .right-arrow{
     align-self: center;
     margin-right: 22rem;
 }
-
+/*/* adjusting it in the section */
 .customer-content{
     margin-top: 2rem;
     font-family: var(--font-family-3);
-    
 }
+/* styling and adjusting the content */
 
 .footer-container{
     display: grid;
@@ -261,6 +285,7 @@ button{
     justify-content: space-between;
     
 }
+/* locating the elements in footer as required */
 
 footer{
     background-color: var(--custom-color-5);
@@ -269,20 +294,24 @@ footer{
     position: relative;
     width: 100%;
 }
+/* styling and adjusting the footer content */
 
 footer li{
     font-family: var(--font-family-3);
     color: var(--custom-color-1);
 
 }
+/* styling the content of the footer */
 
 .list-1{
     margin-bottom: 4rem;
 }
+/* spacing the elements  */
 
 .list-2{
     margin-bottom: 4rem;
 }
+/* spacing the elements  */
 .social-media{
     display: flex;
     margin-left: 4rem;
@@ -291,10 +320,11 @@ footer li{
     padding-left: 1rem;
     margin-bottom: 5rem;
 }
-
+/* adjusting the spacing bewtween the icons */
 .social-media img{
     padding-left: .3rem;
 }
+/* spacing the image */
 
 .footer-icons{
     margin-top: 2rem;
@@ -303,17 +333,20 @@ footer li{
     justify-content: space-around;
     align-items:center;
 }
+/* locating the icons as required(displaying it vertically) */
 
 .footer-icons img{
     width: 2.5rem;
     padding: .5rem;
     margin-left: 12rem;
 }
+/* sizing the icons */
 .footer-content ul li{
     position: relative;
     margin-right: 4rem;
     padding-top: 1.8rem
 }
+/* spacing the elements */
 .copyright{
     color: var(--custom-color-1);
     font-family: var(--font-family-3);
@@ -325,11 +358,13 @@ footer li{
     border-top: .3rem solid var(--custom-color-3);
     padding-left: 65rem;
 }
+/* styling and spacing the copyright */
 
 .back-to-top img{
     width: 5rem;
     margin-top: 2rem;
 }
+/* sizing and adjusting the image */
 
 
 /* ------------------------------------------------ABOUT US--------------------------------------------------*/
@@ -340,11 +375,13 @@ footer li{
     color: var(--custom-color-5);
     font-size: 3rem;
 }
+/* Styling for the #our-story section */
 
 #our-story img{
     width: 70rem;
     margin-left: 4rem;
 }
+/* Set image width and spacing for the image*/
 
 #our-story p{
     font-family: var(--font-family-3);
@@ -354,10 +391,13 @@ footer li{
     text-align: center;
     font-size: 1.3rem;
 }
+/* styling the content of our-story and adjusting as required */
 
 picture{
     display: none;
 }
+/* 
+/* Hide the 'picture' element (used for responsive images) */
 
 #blog h1{
     font-family: var(--font-family-3);
@@ -365,19 +405,20 @@ picture{
     text-align: center;
     font-size: 3rem;
 }
-
+/* Styles for the #blog section */
 #blog img{
     width: 70rem;
     margin-left: 4rem;
 }
-
+/* Set image width and spacing for the image*/
 .blog-2{
     font-family: var(--font-family-3);
     color: var(--custom-color-5);
     text-align: center;
     margin-top: 4rem;
-
 }
+/* styling for elements with the class 'blog-2' */
+
 
 /* --------------------------------------CONTACT------------------------------------------------------ */
 .contact-box{
@@ -392,6 +433,7 @@ picture{
     border: 3px solid var(--custom-color-5);  
     padding: 1rem; 
 }
+/* Styling for the .contact-box section locating the elements as required*/
 
 .contact-heading h1{
     font-family: var(--font-family-3);
@@ -399,6 +441,7 @@ picture{
     font-size: 2rem;
     text-align: center;
 }
+/* Styling for the .contact-heading h1 */
 
 .contact-us{
     max-width: 700rem; 
@@ -407,6 +450,7 @@ picture{
     margin-left: 3rem;
 
 }
+/* Spacing and sizing for the .contact-us section */
 
 .contact-us label{
     display: block; 
@@ -416,15 +460,17 @@ picture{
     font-weight: 600;
     font-size: 1.5rem;
 }
+/* Styling and sizing for the .contact-us label */
 
 .contact-us input{ 
 
-    width: 100%; /* Make input fields and textareas take up the full width of the container */
-    padding: .4rem; /* Add some padding to the input fields and textareas */
-    margin-bottom: 10px; /* Add some space between form elements */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    width: 100%; 
+    padding: .4rem; 
+    margin-bottom: 10px;
+    box-sizing: border-box;
     border-style: none;
 }
+/* Styling and sizing for the .contact-us input */
 
 .contact-us textarea{
     width: 100%;
@@ -433,6 +479,7 @@ picture{
     box-sizing: border-box;
     border-style: none;
 }
+/* sizing for the .contact-us text-area */
 
 .contact-us button {
     background-color: var(--custom-color-3); /* Set the background color for the button */
@@ -443,21 +490,26 @@ picture{
     cursor: pointer; /* Change cursor to a pointer on hover */
     font-size: 1rem;
 }
+/* styling the button */
 
 .contact-us form{
     width: 30rem;
 }
+/* sizing the form width */
 
 .chat-with-us h2{
     font-family: var(--font-family-3);
     font-size: 2rem;
     color: var(--custom-color-5);
 }
+/* Styling for the .chat-with-us h2 */
+
 .chat-with-us{
     align-self: center;
     justify-self:center;
     margin-bottom: 9rem;
 }
+/* placing the image */
 
 .chat-with-us img{
     cursor: pointer;
@@ -470,29 +522,35 @@ picture{
     text-align: center;
     padding-top: 2rem;
 }
+/* styling the h1 of the section */
 
 .store-display{
     display: flex;
 }
+/* displaying flex for placing the elements as required */
 
 .location-map iframe{
     margin: 3rem;
     border-radius: 2rem;
 }
+/* sizing the iframe width */
 
 .store-list-icons li{
     list-style-type: none;
     padding: .5rem;
     margin-top: 3.9rem;
 }
+/* styling and spacing the elements of the list */
 
 .store-list-icons img{
     width: 2rem;
 }
+/* sizing image */
 
 .stores-list{
     margin-top: 3.7rem;
 }
+/* spacing the image */
 
 .stores-list li{
     list-style-type: none;
@@ -500,6 +558,7 @@ picture{
     /* margin-top: 4rem; */
     font-size: 1rem;
 }
+/* styling and spacing the content */
 
 .stores-list li a{
     text-decoration: none;
@@ -508,6 +567,7 @@ picture{
     font-size: 1.3rem;
     font-weight: 600;
 }
+/* styling the content */
 
 /* ---------------------------------------MEDIA QUERIES---------------------------------------------------- */
 
@@ -515,17 +575,20 @@ picture{
     .announcement-bar{
         display:none;
     }
+    /* hide the .announcement-bar */
     #navbar{
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
         justify-content: space-around;
     }
+    /* displaying the elements as required */
 
     .logo{
         grid-column: 1/2;
         grid-row: 1/2;
     }
+    /* sizing the elements in the grid */
     .nav-links{
         grid-column: 1/3;
         grid-row: 2/3;
@@ -535,6 +598,7 @@ picture{
         background-color: var(--custom-color-3);
         margin: 0 auto;
     }
+    /* styling and sizing the elements in the link */
     .icons{
         margin: 0;
         grid-column: 2/3;
@@ -542,65 +606,78 @@ picture{
         align-self:flex-start;
         justify-self:self-end;
     }
+    /* sizing and locating the icons in the navbar */
 
     .logo img{
         width: 6rem;
         height: 6rem;
     }
+    /* sizing the image */
 
     #navbar-links a{
         font-size:1.2rem;
         text-align: center;
         color: var(--custom-color-5);
     }
+    /* styling in the links */
 
 
     .icons img{
         width: 1.6rem;
         height: 1.6rem;
     }
+    /* sizing the image */
 
     .header-heading h1{
         font-size: 1em;
         align-self: flex-start;
     }
+    /* sizing the heading  */
 
     .header-heading{
         margin: 0;
         margin-top: 1em;
     }
+    /* spacing the heading */
 
     picture{
         display: block;
         margin-top: 1rem;
     }
+    /* displaying the responsive images */
 
     .header-banner{
         display: none;
     }
+    /* hiding the fixed size image */
 
     .shop-heading h1{
         font-size: 1em;
     }
+    /* sizing the font size */
 
     .shop-content img{
         width: 5em;
         height: 6em;
     }
+    /* sizing the image */
 
     .card-name td{
         font-size: .7em;
         padding: 0;
     }
+    /* spacing the data element */
 
     .card-price td{
         font-size: .7em;
         padding: 0;
     }
+    /* spacing the data element */
 
     td{
         padding: 1em;
     }
+    /* spacing the data element */
 
     .button-container button{
         font-size: .7em;
@@ -610,10 +687,12 @@ picture{
         padding-bottom: .5em;
         margin-top: 1rem;
     }
+    /* spacing and sizing the button */
 
     #customer h1{
         font-size: 1em;
     }
+    /* sizing the font */
 
     
     .customer-comment{
@@ -623,21 +702,25 @@ picture{
         flex-wrap: nowrap;
         justify-content: center;
     }
+    /* locating the element as required */
 
     .customer-image img{
         width: 14em;
         height: 9em;
     }
+    /* sizing the image*/
 
     .left-arrow img{
         width: 1.5em;
         height: 1.4em;
     }
+    /* sizing the image */
 
     .right-arrow img{
         width: 1.5em;
         height: 1.4em;
     }
+    /* sizing the image */
 
     .footer-container{
         display: grid;
@@ -648,22 +731,26 @@ picture{
         justify-content:start;
         align-items: start;
     }
+    /* displaying the elements of footer as required */
 
     .list-1{
         grid-column: 1/2;
         grid-row: 1/2;
         width: 1rem;
     }
+    /* spacing and locating the elemens as required */
 
     .list-2{
         grid-column: 2/3;
         grid-row: 1/2;
     }
+    /* spacing and locating the elemens as required */
 
     .social-media{
         grid-column: 1/5;
         grid-row: 2/3;
     }
+    /* spacing and locating the elemens as required */
 
 
     .footer-icons{
@@ -672,33 +759,40 @@ picture{
         margin: 0;
         margin-top: .5em;
     }
+    /* spacing and locating the elemens as required */
 
     .footer-content{
         grid-column: 4/5;
         grid-row: 1/2;
     }
+    /* spacing and locating the elemens as required */
 
     .footer-icons img{
         width: 1.3em;
         margin: 0;
     }
+    /* sizing the image */
 
     .list-1 li{
         font-size: .5em;
     }
+    /* sizing the font size of the footer content: ; */
 
     .list-2 li{
         font-size: .5em;
     }
+    /* sizing the font size of the footer content: ; */
 
     .footer-content li{
         font-size: .1em;
     }
+    /* sizing the font size of the footer content: ; */
     .footer-content ul{
         padding: 0;
         margin: 0;
         margin-top: 1.3em;
     }
+    /* spacing the elements of the footer content: ; */
     
     .footer-content ul li{
         margin: 0;
@@ -707,51 +801,62 @@ picture{
         align-self: self-start;
         margin-right: 3.9rem;
     }
+    /* sizing the elements of the footer content: ; */
 
     .social-media img{
         width: 1.4em;
         height: 1.4em;
     }
+    /* sizing the image */
 
     .social-media{
         margin: 0;
         padding: 0;
         margin-left: 1.7em;
     }
+    /* sizing and spacing the image */
 
     .copyright{
         padding-left: 10.5rem;
     }
+    /* spacing the element of copyright */
 
     /* ---------------------------------------ABOUT----------------------------------------------------- */
     #our-story h1{
         font-size: 2em;
     }
+    /* sizing the font */
     #our-story p{
         font-size: .5em;
         margin: 0;
         text-align: center;
     }
+    /* sizing and spacing the content*/
 
     #blog h1{
         font-size: 2em;
     }
+    /* sizing the font */
 
     h2{
         font-size: 1em;
     }
+    /* sizing the font*/
 
     picture{
         display: block;
     }
+    /* displaying the responsive image */
 
     #our-story img{
         display: none;
     }
+    /* hiding the fix size image */
 
     #blog img{
         display: none;
     }
+    /* hiding the fix size image */
 
     /* -------------------------------------contact------------------------------------------------- */
     .contact-heading h1{
@@ -760,12 +865,14 @@ picture{
         font-size: 1.6  em;
         text-align: center;
     }
+    /* sizing and spacing the font */
 
     .contact-box{
         width: 20rem;
         height: 15rem;
         grid-template-columns: repeat(2,160px);
     }
+    /* sizing and locating the elements as required */
 
     .contact-us label{
         display: block; 
@@ -775,19 +882,20 @@ picture{
         font-weight: 600;
         font-size: .6em;
     }
+    /* styling the elements of contact */
     .contact-us input{ 
-
-        /* width: 100%; Make input fields and textareas take up the full width of the container */
-        padding: .03em; /* Add some padding to the input fields and textareas */
-        margin-bottom: 10px; /* Add some space between form elements */
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        padding: .03em;
+        margin-bottom: 10px;
+        box-sizing: border-box; 
         border-style: none;
         width: 10em;
     }
+    /* styling and spacing the input boxes */
 
     .contact-us{
         margin: 0;
     }
+
 
     .contact-us textarea{
         width: 10em;
@@ -796,6 +904,7 @@ picture{
         box-sizing: border-box;
         border-style: none;
     }
+    /* styling and spacing the textarea boxes */
 
     .contact-us button {
         background-color: var(--custom-color-3); /* Set the background color for the button */
@@ -807,18 +916,21 @@ picture{
         font-size: .4em;
         align-self:end;
     }
+    /* styling and spacing the button */
 
     .chat-with-us h2{
         font-family: var(--font-family-3);
         font-size: 1rem;
         color: var(--custom-color-5);
     }
+    /* sizing and styling the font */
 
     .chat-with-us img{
         width: 3.8em;
         height: 4.8em;
         margin-left: 2em;
     }
+    /* sizing and spacing the font */
 
     .stores h1{
         font-family: var(--font-family-3);
@@ -827,6 +939,7 @@ picture{
         text-align: center;
         padding-top: 2rem;
     }
+    /* styling and spacing the heading */
 
     .location-map iframe{
         margin: 1rem;
@@ -834,6 +947,7 @@ picture{
         width: 16rem;
         height: 15rem;
     }
+    /* sizing and spacing the iframe */
 
     .store-list-icons li{
         list-style-type: none;
@@ -841,37 +955,42 @@ picture{
         margin-right: 2em;
         padding-bottom: 2.5em;
     }
+    /* styling the list elements  */
 
     .store-list-icons ul{
         padding: 0;
         margin-top: 2em;
     }
+    /* spacing the list elements */
 
     .store-list-icons ul li{
         margin: 0;
     }
 
+
     .store-list-icons img{
         width: 1rem;
     }
-    
+    /* sizing the image */
     .stores-list{
         margin-top: 1.8em;
-
     }
-    
+    /* spacing the element */
+
     .stores-list li{
         list-style-type: none;
         padding-bottom: 2.7rem;
         /* margin-top: 4rem; */
         font-size: 1em;
     }
+    /* styling the list elements */
 
     .stores-list ul{
         padding: 0;
         margin-left: 1em;
         margin-top: 0;
     }
+    /* spacing the elements  */
     
     .stores-list li a{
         text-decoration: none;
@@ -880,7 +999,5 @@ picture{
         font-size: .6rem;
         font-weight: 600;
     }
-
-
-    
+    /* styling and sizing the content */
 }
