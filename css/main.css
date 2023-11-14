@@ -10,6 +10,30 @@
     --font-family-3: 'Solway', serif;
 }
 
+.skip-links{
+    margin: auto;
+    padding: 0px;
+}
+
+.skip-links li{
+    list-style: none;
+}
+.skip-links a{
+    position: absolute;
+    top: -100px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color:var(--custom-color-2);
+    font-family:var(--font-family-3);
+    color: var(--custom-color-5);
+    padding: 15px;
+    font-weight: bold;
+}
+
+.skip-links a:focus{
+    top: 0;
+  }
+
 .announcement-bar{
     background-color: var(--custom-color-4);
     text-align: center;
@@ -17,9 +41,15 @@
     font-weight: bold;
     padding: .5rem;
     width: 100%;
+    margin: 0 auto;
 }
 
 nav{
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
     width: 100%;
     margin: 0 auto;
 }
@@ -29,25 +59,25 @@ nav{
     height:9rem;
 }
 
-.navbar{
+#navbar{
     background-color:var(--custom-color-5);
     display: flex;
     justify-content:flex-start;
     margin: 0 auto;
 }
 
-.navbar-links{
+#navbar-links{
     display: flex;
     padding-left: 0px;
     margin-top: .5rem;
 }
 
-.navbar-links li{
+#navbar-links li{
     list-style-type: none;
     padding: .5rem;
 }
 
-.navbar-links a{
+#navbar-links a{
     text-decoration: none;
     font-family: var(--font-family-3);
     color: #F199F2;
@@ -71,11 +101,15 @@ nav{
 }
 
 .header-banner img{
-    width: 78rem;
+    width: 100%;
     margin: 0 auto;
     margin-top: 1.5rem;
 }
 
+.header-container{
+    width: 100%;
+    margin: 0 auto;
+}
 .header-heading{
     display:flex;
     flex-flow:column;
@@ -90,9 +124,16 @@ nav{
 
 .header-heading h1{
     margin-top:-1rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.shop{
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#shop{
     background-color: var(--custom-color-2);
     width: 100%;
     display: grid;
@@ -168,7 +209,12 @@ button{
     justify-content: center;
 }
 
-.customer h1{
+#customer{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#customer h1{
     margin-top: 2rem;
     text-align: center;
     font-family: var(--font-family-3);
@@ -176,19 +222,6 @@ button{
     font-weight: 500;
     font-size: 1.8rem;
 }
-
-/* .customer-card{
-    width: 24rem; 
-    height: 15rem; 
-    background-color: var(--custom-color-3); 
-    border-radius: 25px;
-    border: 4px solid var(--custom-color-5);
-    text-align:left; 
-    color: var(--custom-color-5); 
-    font-size: .8rem; 
-    font-weight: bold;
-    display: flex;
-} */
 
 .customer-image img{
     width: 22rem;
@@ -230,6 +263,7 @@ footer{
     padding-bottom: 8rem;
     margin-top: 5rem;
     position: relative;
+    width: 100%;
 }
 
 footer li{
@@ -288,22 +322,27 @@ footer li{
     padding-left: 65rem;
 }
 
+.back-to-top img{
+    width: 5rem;
+    margin-top: 2rem;
+}
+
 
 /* ------------------------------------------------ABOUT US--------------------------------------------------*/
 
-.our-story h1{
+#our-story h1{
     text-align: center;
     font-family: var(--font-family-3);
     color: var(--custom-color-5);
     font-size: 3rem;
 }
 
-.our-story img{
+#our-story img{
     width: 70rem;
     margin-left: 4rem;
 }
 
-.our-story p{
+#our-story p{
     font-family: var(--font-family-3);
     font-weight: 350;
     margin-left: 5rem;
@@ -312,14 +351,14 @@ footer li{
     font-size: 1.3rem;
 }
 
-.blog h1{
+#blog h1{
     font-family: var(--font-family-3);
     color: var(--custom-color-5);
     text-align: center;
     font-size: 3rem;
 }
 
-.blog img{
+#blog img{
     width: 70rem;
     margin-left: 4rem;
 }
@@ -460,4 +499,353 @@ footer li{
     color:var(--custom-color-5);
     font-size: 1.3rem;
     font-weight: 600;
+}
+
+/* ---------------------------------------MEDIA QUERIES---------------------------------------------------- */
+
+@media screen and (max-width: 425px){
+    .announcement-bar{
+        display:none;
+    }
+    #navbar{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: space-around;
+    }
+
+    .logo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .nav-links{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        align-self:center;
+        justify-self:center;
+        margin-top: 2.3rem;
+        background-color: var(--custom-color-3);
+        margin: 0 auto;
+    }
+    .icons{
+        margin: 0;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        align-self:flex-start;
+        justify-self:self-end;
+    }
+
+    .logo img{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #navbar-links a{
+        font-size:1.2rem;
+        text-align: center;
+        color: var(--custom-color-5);
+    }
+
+
+    .icons img{
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .header-heading h1{
+        font-size: 1.5em;
+    }
+
+    .shop-heading h1{
+        font-size: 1em;
+    }
+
+    .shop-content img{
+        width: 5em;
+        height: 6em;
+    }
+
+    .card-name td{
+        font-size: .7em;
+        padding: 0;
+    }
+
+    .card-price td{
+        font-size: .7em;
+        padding: 0;
+    }
+
+    td{
+        padding: 1em;
+    }
+
+    .button-container button{
+        font-size: .7em;
+        padding-left: 1.8em;
+        padding-right: 1.8em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        margin-top: 1rem;
+    }
+
+    #customer h1{
+        font-size: 1em;
+    }
+
+    
+    .customer-comment{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .customer-image img{
+        width: 14em;
+        height: 9em;
+    }
+
+    .left-arrow img{
+        width: 1.5em;
+        height: 1.4em;
+    }
+
+    .right-arrow img{
+        width: 1.5em;
+        height: 1.4em;
+    }
+
+    .footer-container{
+        display: grid;
+        grid-template-columns:90px 90px 90px 140px;
+        grid-template-rows: repeat(2,140px);
+        justify-items: stretch;
+        align-content: stretch;
+        justify-content:start;
+        align-items: start;
+    }
+
+    .list-1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 1rem;
+    }
+
+    .list-2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .social-media{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+
+    .footer-icons{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin: 0;
+        margin-top: .5em;
+    }
+
+    .footer-content{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+
+    .footer-icons img{
+        width: 1.3em;
+        margin: 0;
+    }
+
+    .list-1 li{
+        font-size: .5em;
+    }
+
+    .list-2 li{
+        font-size: .5em;
+    }
+
+    .footer-content li{
+        font-size: .1em;
+    }
+    .footer-content ul{
+        padding: 0;
+        margin: 0;
+        margin-top: 1.3em;
+    }
+    
+    .footer-content ul li{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 1.7rem;
+        align-self: self-start;
+        margin-right: 3.9rem;
+    }
+
+    .social-media img{
+        width: 1.4em;
+        height: 1.4em;
+    }
+
+    .social-media{
+        margin: 0;
+        padding: 0;
+        margin-left: 1.7em;
+    }
+
+    .copyright{
+        padding-left: 10.5rem;
+    }
+
+    /* ---------------------------------------ABOUT----------------------------------------------------- */
+    #our-story h1{
+        font-size: 2em;
+    }
+    #our-story p{
+        font-size: .5em;
+        margin: 0;
+        text-align: center;
+    }
+
+    #blog h1{
+        font-size: 2em;
+    }
+
+    #blog h2{
+        font-size: 1em;
+    }
+
+    /* -------------------------------------contact------------------------------------------------- */
+    .contact-heading h1{
+        font-family: var(--font-family-3);
+        color: var(--custom-color-5);
+        font-size: 1.6  em;
+        text-align: center;
+    }
+
+    .contact-box{
+        width: 20rem;
+        height: 15rem;
+        grid-template-columns: repeat(2,160px);
+    }
+
+    .contact-us label{
+        display: block; 
+        margin-bottom: 5px;
+        font-family: var(--font-family-3);
+        color: var(--custom-color-5);
+        font-weight: 600;
+        font-size: .6em;
+    }
+    .contact-us input{ 
+
+        /* width: 100%; Make input fields and textareas take up the full width of the container */
+        padding: .03em; /* Add some padding to the input fields and textareas */
+        margin-bottom: 10px; /* Add some space between form elements */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        border-style: none;
+        width: 10em;
+    }
+
+    .contact-us{
+        margin: 0;
+    }
+
+    .contact-us textarea{
+        width: 10em;
+        padding: .7rem;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-style: none;
+    }
+
+    .contact-us button {
+        background-color: var(--custom-color-3); /* Set the background color for the button */
+        color: var(--custom-color-6); /* Set the text color for the button */
+        padding: 12px 8px; /* Add padding to the button */
+        border: none; /* Remove the default button border */
+        border-radius: 50px; /* Add border-radius for rounded corners */
+        cursor: pointer; /* Change cursor to a pointer on hover */
+        font-size: .4em;
+        align-self:end;
+    }
+
+    .chat-with-us h2{
+        font-family: var(--font-family-3);
+        font-size: 1rem;
+        color: var(--custom-color-5);
+    }
+
+    .chat-with-us img{
+        width: 3.8em;
+        height: 4.8em;
+        margin-left: 2em;
+    }
+
+    .stores h1{
+        font-family: var(--font-family-3);
+        font-size: 1rem;
+        color: var(--custom-color-5);
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .location-map iframe{
+        margin: 1rem;
+        border-radius: 1rem;
+        width: 16rem;
+        height: 15rem;
+    }
+
+    .store-list-icons li{
+        list-style-type: none;
+        padding:0;
+        margin-right: 2em;
+        padding-bottom: 2.5em;
+    }
+
+    .store-list-icons ul{
+        padding: 0;
+        margin-top: 2em;
+    }
+
+    .store-list-icons ul li{
+        margin: 0;
+    }
+
+    .store-list-icons img{
+        width: 1rem;
+    }
+    
+    .stores-list{
+        margin-top: 1.8em;
+
+    }
+    
+    .stores-list li{
+        list-style-type: none;
+        padding-bottom: 2.7rem;
+        /* margin-top: 4rem; */
+        font-size: 1em;
+    }
+
+    .stores-list ul{
+        padding: 0;
+        margin-left: 1em;
+        margin-top: 0;
+    }
+    
+    .stores-list li a{
+        text-decoration: none;
+        font-family: var(--font-family-3);
+        color:var(--custom-color-5);
+        font-size: .6rem;
+        font-weight: 600;
+    }
+
+
+    
 }
