@@ -19,16 +19,16 @@
         </ul>
     </div>
     <div class="announcement-bar">GET 15% DISCOUNT ON YOUR FIRST PURSHACE!!</div>
-    <nav id="navbar">
+    <nav id="navbar" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div class="logo">
             <img src="images/logo.png" alt="Logo">
         </div>
         <div class="nav-links">
-            <ul id="navbar-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="#">SHOP</a></li>
+            <ul id="navbar-links" role="menubar">
+                <li role="menuitem"><a href="index.html">HOME</a></li>
+                <li role="menuitem"><a href="about.html">ABOUT</a></li>
+                <li role="menuitem"><a href="contact.html">CONTACT</a></li>
+                <li role="menuitem"><a href="#">SHOP</a></li>
             </ul>
         </div>
         <div class="icons">
@@ -39,20 +39,32 @@
         </div>
     </nav>
     <main>
-        <div id="our-story">
+        <picture>
+            <source srcset= "images/about-us-derivatives/about-us-320_x_123.png 1x"
+            media="(max-width: 320px)">
+            <source srcset="images/about-us-derivatives/about-us-375_x_144.png 1x" media="(max-width:375px)">
+            <source srcset="images/about-us-derivatives/about-us-425_x_163.png 1x" media="(max-width:425px)">
+            <source srcset="images/about-us-derivatives/about-us-480_x_184.png 1x" media="(max-width:480px)">
+            <img src="images/about-us.png" alt="banner" role="img" aria-label="About Us Banner">
+        </picture>
+        <div id="our-story" role="region" aria-labelledby="our-story-heading">
             <h1>OUR STORY</h1>
-            <img src="images/about-us.png" alt="out-story">
+            <img src="images/about-us.png" alt="about-us">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium, voluptas ratione veniam natus nemo quis. Quidem qui vero minima aut iste totam in, nam asperiores nostrum, velit consequatur placeat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quidem perferendis atque nulla repudiandae saepe veritatis ad eveniet, cum esse harum quis ea ratione quae, autem voluptatibus. Accusamus, nihil? Illum?</p>
         </div>
-        <picture>
-            <source srcset= "images/about-us-derivatives/about-us-320_x_123.png 1x, images/about-us-derivatives/about-us-375_x_144.png 2x, images/about-us-derivatives/about-us-425_x_163.png 3x, images/about-us-derivatives/about-us-480_x_184.png 4x"
-            media="(max-width: 320px)">
-        </picture>
-        <div id="blog">
+        <div id="blog" role="region" aria-labelledby="blog-heading">
             <h1>OUR BLOG</h1>
             <img src="images/our blog.png" alt="our-blog">
-            <div class="blog-2"><h2>STAY UPDATED ON OUR EVENTS</h2></div>
         </div>
+        <picture>
+            <source srcset= "images/our blog-derivatives/our blog-320_x_146.png 1x"
+            media="(max-width: 320px)">
+            <source srcset="images/our blog-derivatives/our blog-375_x_171.png 1x" media="(max-width:375px)">
+            <source srcset="images/our blog-derivatives/our blog-425_x_194.png 1x" media="(max-width:425px)">
+            <source srcset="images/our blog-derivatives/our blog-480_x_219.png 1x" media="(max-width:480px)">
+            <img src="images/our blog-derivatives/our blog-425_x_194.png" alt="blog" aria-label="blog images">
+        </picture>
+        <div class="blog-2"><h2>STAY UPDATED ON OUR EVENTS</h2></div>
     </main>
     <footer>
         <div class="footer-container">
@@ -81,10 +93,10 @@
                 <img src="images/email.png" alt="email">
             </div>
             <div class="footer-content">
-                <ul>
-                    <li>+1(123)-456-7890</li>
-                    <li>234 Down Streets, Nepean ON, K2B 8G9</li>
-                    <li>msstuffy@gmail.com</li>
+                <ul  itemscope itemtype="https://schema.org/Organization">
+                    <li itemprop="telephone">+1(123)-456-7890</li>
+                    <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">234 Down Streets, Nepean ON, K2B 8G9</li>
+                    <li itemprop="email">msstuffy@gmail.com</li>
                 </ul>
             </div>
         </div>

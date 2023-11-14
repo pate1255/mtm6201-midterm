@@ -19,16 +19,16 @@
         </ul>
     </div>
     <div class="announcement-bar">GET 15% DISCOUNT ON YOUR FIRST PURSHACE!!</div>
-    <nav id="navbar">
+    <nav id="navbar" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div class="logo">
             <img src="images/logo.png" alt="Logo">
         </div>
         <div class="nav-links">
-            <ul id="navbar-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="#">SHOP</a></li>
+            <ul id="navbar-links" role="menubar">
+                <li role="menuitem"><a href="index.html">HOME</a></li>
+                <li role="menuitem"><a href="about.html">ABOUT</a></li>
+                <li role="menuitem"><a href="contact.html">CONTACT</a></li>
+                <li role="menuitem"><a href="#">SHOP</a></li>
             </ul>
         </div>
         <div class="icons">
@@ -39,19 +39,23 @@
         </div>
         
     </nav>
-    <header class="header-container">
+    <header class="header-container" role="banner" itemscope itemtype="https://schema.org/WebPage">
         <div class="header-heading">
             <div><h1>WELCOME TO THE WORLD</h1></div>
             <div><h1>STUFFED WITH</h1></div>
             <div><h1>HAPPINESS!</h1></div>
         </div>
-        <picture>
-            <source srcset= "images/about-us-derivatives/about-us-320_x_123.png 1x, images/about-us-derivatives/about-us-375_x_144.png 2x, images/about-us-derivatives/about-us-425_x_163.png 3x, images/about-us-derivatives/about-us-480_x_184.png 4x"
-            media="(max-width: 480px)">
-        </picture>
         <div class="header-banner">
             <img src="images/header-banner.png" alt="banner-image">
         </div>
+        <picture>
+            <source srcset= "images/header-banner-derivatives/header-banner-320_x_72.png 1x"
+            media="(max-width: 320px)">
+            <source srcset="images/header-banner-derivatives/header-banner-375_x_91.png 1x" media="(max-width:375px)">
+            <source srcset="images/header-banner-derivatives/header-banner-425_x_103.png 1x" media="(max-width:425px)">
+            <source srcset="images/header-banner-derivatives/header-banner-480_x_117.png 1x" media="(max-width:480px)">
+            <img src="images/header-banner.png" alt="banner">
+        </picture>
         
     </header>
     <main>
@@ -61,7 +65,7 @@
                 <table>
                     <tr>
                         <div class="card-image"> 
-                            <td><img src="images/happy-egg.png" alt="happy-egg" tabindex="0"></td>
+                            <td><img src="images/happy-egg.png" alt="happy-egg" tabindex="0" role="img" aria-label="Happy Egg"></td>
                             <td><img src="images/mr.dino.png" alt="mr.dino" tabindex="0"></td>
                             <td><img src="images/cozy seal.png" alt="cozy seal" tabindex="0"></td>
                         </div>
@@ -78,11 +82,11 @@
                     </tr>
                   </table>
             </div>
-            <div class="button-container"><button class="shop-button">SHOP</button></div>
+            <div class="button-container"><button class="shop-button" role="button">SHOP</button></div>
         </div>
         <div id="customer">
             <h1>THEY ARE TALKING ABOUT MS.STUFFY!</h1>
-            <div class="customer-comment">
+            <div class="customer-comment"  aria-live="polite" itemscope itemtype="https://schema.org/UserComments">
                 <div class="left-arrow"><img src="images/left-arrow.png" alt="left-arrow" tabindex="0"></div>
                 <div class="customer-image"><img src="images/card.png" alt="customer"></div>
                 <div class="right-arrow"><img src="images/right-arrow.png" alt="right-arrow" tabindex="0"></div>
@@ -110,10 +114,12 @@
                     <img src="images/twitter.png" alt="twitter">
                     <img src="images/linked-in.png" alt="linked-in">
                 </div>
-                <div class="footer-icons">
-                    <img src="images/call.png" alt="call">
-                    <img src="images/location.png" alt="location">
-                    <img src="images/email.png" alt="email">
+                <div class="footer-content" >
+                    <ul itemscope itemtype="https://schema.org/Organization">
+                        <li itemprop="telephone">+1(123)-456-7890</li>
+                        <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">234 Down Streets, Nepean ON, K2B 8G9</li>
+                        <li itemprop="email">msstuffy@gmail.com</li>
+                    </ul>
                 </div>
             <div class="footer-content">
                 <ul>
@@ -127,7 +133,7 @@
         <div class="copyright">
             <p>&copy; 2023 Ms. Stuffy.</p> 
         </div>
-        <div class="back-to-top">
+        <div class="back-to-top" role="presentation">
             <a href="#navbar"><img src="images/back-to-top.png" alt="back-to-top"></a>
         </div>
     </footer>

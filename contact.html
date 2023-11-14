@@ -10,33 +10,41 @@
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">  
     </head>
 <body>
+    <div>
+        <ul class="skip-links">
+            <li><a href="#navbar-links">Move to Navigation bar</a></li>
+            <li><a href="#contact-form">Move to contact box</a></li>
+            <li><a href="#stores">Move to comment-section</a></li>
+            <li><a href="#footer-section">Move to footer section</a></li>
+        </ul>
+    </div>
     <div class="announcement-bar">GET 15% DISCOUNT ON YOUR FIRST PURSHACE!!</div>
-    <nav id="navbar">
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo">
+    <nav id="navbar" role="navigation">
+        <div class="logo" role="img">
+            <img src="images/logo.png" aria-label="Ms. Stuffy Logo">
         </div>
         <div class="nav-links">
-            <ul id="navbar-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="#">SHOP</a></li>
+            <ul id="navbar-links" role="menubar">
+                <li role="menuitem"><a href="index.html">HOME</a></li>
+                <li role="menuitem"><a href="about.html">ABOUT</a></li>
+                <li role="menuitem"><a href="contact.html">CONTACT</a></li>
+                <li role="menuitem"><a href="#">SHOP</a></li>
             </ul>
         </div>
         <div class="icons">
-            <img src="images/search.png" alt="search">
+            <img src="images/search.png" alt="search" role="img" aria-label="Search Icon">
             <img src="images/sign-up.png" alt="sign-up">
             <img src="images/bag.png" alt="shopping-bag">
             <img src="images/menu.png" alt="menu">
         </div>
     </nav>
-    <div class="contact-form">
+    <div id="contact-form">
         <div class="contact-heading">
             <h1>JOIN OUR WORLD!</h1>
         </div>
         <div class="contact-box">
             <div class="contact-us">
-                <form action="contact.html" method="post" id="contactForm">
+                <form action="contact.html" method="post" id="contactForm" role="form">
                     <label for="name">NAME</label>
                     <input type="text" id="name" name="name" required>
                     
@@ -55,7 +63,7 @@
             </div>
         </div>
     </div>
-    <div class="stores">
+    <div id="stores">
         <h1>AVAILABLE STORES IN OTTAWA.</h1>
         <div class="store-display">
             <div class="location-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44860.898809034465!2d-75.84949833107233!3d45.35272473135418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1699590307606!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
@@ -77,7 +85,7 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-container">
             <div class="list-1">
                 <ul>
@@ -94,7 +102,7 @@
                     </ul>
                 </div>
                 <div class="social-media">
-                <img src="images/facebook.png" alt="facebook">
+                <img src="images/facebook.png" alt="facebook" role="link" aria-label="Facebook Icon">
                 <img src="images/twitter.png" alt="twitter">
                 <img src="images/linked-in.png" alt="linked-in">
             </div>
@@ -104,10 +112,10 @@
                 <img src="images/email.png" alt="email">
             </div>
             <div class="footer-content">
-                <ul>
-                    <li>+1(123)-456-7890</li>
-                    <li>234 Down Streets, Nepean ON, K2B 8G9</li>
-                    <li>msstuffy@gmail.com</li>
+                <ul  itemscope itemtype="https://schema.org/Organization">
+                    <li itemprop="telephone">+1(123)-456-7890</li>
+                    <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">234 Down Streets, Nepean ON, K2B 8G9</li>
+                    <li itemprop="email">msstuffy@gmail.com</li>
                 </ul>
             </div>
         </div>
